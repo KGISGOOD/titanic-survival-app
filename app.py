@@ -1,12 +1,13 @@
 from flask import Flask, render_template_string, request
 import pandas as pd
-import joblib
+import pickle
 
 # 初始化 Flask app
 app = Flask(__name__)
 
 # 載入模型
-model = joblib.load('./model.pkl')
+with open('./model.pkl', 'rb') as f:
+    model = pickle.load(f)
 
 # HTML模板
 html_template = '''

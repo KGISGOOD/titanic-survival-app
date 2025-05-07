@@ -34,3 +34,8 @@ Titanic 存活預測應用程式範例([參考文件](https://www.kaggle.com/com
 1. 將此應用程式部署到 Azure Virtual Machine。
 2. 將此應用程式部署到 Azure Contrainer Instance。
 3. 將此應用程式部署到 Azure Function 。
+
+# 更新模型
+1. 修改並執行 train_model.py
+
+   `python train_model.py`
