@@ -17,7 +17,7 @@ rate_men = sum(men)/len(men)
 print("% of men who survived:", rate_men)
 
 y = data["Survived"]
-features = ["Pclass", "Sex", "SibSp", "Parch"]
+features = ["Age", "Sex", "SibSp", "Parch"]
 X = pd.get_dummies(data[features])
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
